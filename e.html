@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+     <!-- icons link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+       html,body{
+        width: 100%;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          overflow-x: hidden;
+          background-color: black;
+       }
+      nav img{
+          margin-left: 20px;
+        }
+      nav{
+            background-color: black;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    ul{
+        display: flex;
+        color: red;
+    }
+    li{
+        list-style: none;
+    }
+    li a{
+        text-decoration: none;
+          color: white;
+          margin-right: 50px;
+          transition-duration: 0.3s;
+          transition-timing-function: linear;
+          transition-delay: 0s;
+    }
+    li a:hover{
+          color: #00ffa2;
+          border-bottom: 2px #00ffa2 solid;
+          padding: 5px;
+        }
+    .toggle{
+          position: absolute;
+          top: 40px;
+          right: 16px;
+          display: none;
+          font-size: 20px;
+        }
+    .active{
+            display: block;
+          }
+          section{
+            /* display: flex;
+            justify-content: space-evenly; */
+            background-image: url(./h3pGxo.gif);
+            background-size: cover;
+             background-repeat:no-repeat;
+             background-position: center;
+            
+            
+          }
+          section div{
+             display: flex;
+             flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 450px;
+            /* border:1px rgb(255, 34, 34) solid ; */
+            line-height: 0px;
+            
+          }
+          section div h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 80px;
+            font-size: 50px;
+            color: white;
+          }
+          section div button{
+            width: 150px;
+            height: 30px;
+           margin-left: 80px;
+           margin-top: 20px;
+           background-color: rgb(255, 34, 34);
+           color: white;
+           border: none;
+           transition-duration: 0.5s;
+            transition-timing-function: linear;
+            transition-delay: 0s;       
+          }
+          section div button:hover{
+            width: 160px;
+            height: 35px;
+            box-shadow: 1px 0px 12px 4px rgba(255,34,34,1);
+            -webkit-box-shadow: 1px 0px 12px 4px rgba(255,34,34,1);
+            -moz-box-shadow: 1px 0px 12px 4px rgba(255,34,34,1);
+          }
+          section img{
+            height:450px;
+            width: 500px;
+            position: absolute;
+            top: 80px;
+            right: 0px;
+          }
+          .logout{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            height: 250px;
+            display: none;
+            background-color: white;
+            text-align: center;
+          }
+          .logout-popup{
+            display: block;
+            cursor:default;
+          }
+          .logout h1{
+            color: black;
+          }
+
+          @media (max-width:768px){
+          .toggle{
+            display: block;
+            color: #00ffa2;
+          }
+          nav{
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .nav{
+            height: 310px;
+            width: 100%;
+            transition-duration: 0.2s;
+          transition-timing-function: linear;
+          transition-delay: 0s;
+          }
+          ul{
+             display: none;
+             flex-direction: column;
+             width: 100%;
+          }
+          li{
+            margin-bottom: 15px;
+          }
+          .logout{
+            width: 300px;
+          }
+          section{
+            background-image: url(./h3pGxo.gif);
+          }
+          section div{
+            background-image: url(./black-removebg-preview.png); 
+            background-size: cover;
+             background-repeat:no-repeat;
+             background-position: center;
+          }
+          section div h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 10px;
+            font-size: 40px;
+            color: white;
+          }
+          section div button{
+                margin-left: 10px;
+          }
+          section img{
+            display: none;
+          }
+        }
+</style>
+<body>
+
+  <!-- navbar -->
+    <nav>
+       <img src="./logo.png" alt="" width="180px">
+        <i class="fas fa-bars toggle"></i>
+    <ul>
+        <li><a href="#" >Home</a></li>
+        <li><a href="#" >About</a></li>
+        <li><a href="#">skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li> 
+        <li><a href="#" class="aa">LogOut</a></li>
+    </ul>
+</nav>
+
+<div>
+
+  <!-- Home -->
+  <!-- <h1>Hi everyone - I am looking for a new role as a frontend developer and would appreciate your support.Thank you in advance for any connections,advice, or opportunities you can offer.</h1> -->
+<section>
+  <div>
+    <h1>Hi,</h1>
+    <h1>I'm <font style="color: red;">Hemanth</font></h1>
+    <h1>Front-end developer</h1>
+    <button>Contact</button>
+    <img src="./black-removebg-preview.png" alt="" >
+  </div>
+
+  <!-- about me -->
+  
+
+  
+<!-- logout -->
+</section>
+<div class="logout">
+  <i class="fa-regular fa-circle-question fa-beat" style="color: black; font-size: 80px; padding-top: 10px;"></i>
+  <h1>Are you Sure you want to LogOut?</h1>
+ <a href="./Protfollo.html"> <button style="background-color: green; color: white; border: none; width: 50px; height:30px; margin-right: 20px;">Yes</button></a>
+ <a href=""> <button style="background-color: red; color: white; border: none; width: 50px; height:30px;">No</button></a>
+</div>
+  
+    <script>
+      // toggle click
+        let nav = document.querySelector('nav')
+        let ul=document.querySelector('ul')
+
+        let button=document.querySelector('.toggle')
+        button.addEventListener('click',()=>{
+            ul.classList.toggle("active")
+            nav.classList.toggle("nav")
+        })
+
+        //  logout click
+        let div = document.querySelector('.logout')
+        let id = document.querySelector('.aa')
+        id.addEventListener('click',()=>{
+          div.classList.toggle('logout-popup')
+        })
+
+        
+
+
+
+    </script>
+</body>
+</html>
